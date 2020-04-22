@@ -1,0 +1,10 @@
+1. LOGIN REQUEST --> {[login]-[userId,password]} --> returns: true/false
+2. REGISTER REQUEST --> {[register]-[username,password]} --> returns: true/false
+3. GET ALL PATIENTS BY DOCTOR ID --> {[get_patients_by_doctor_id]-[doctorID]} --> returns: [{1,Patient1,patient.1@gmail.com,12345,42,New York,kalibre1,Sarı,Erkek,donor1,scale1} {3,Patient2,patient.3@gmail.com,34567,54,Berlin,kalibre3,Kahverengi,Erkek,donor3,scale3}] / ""
+4. GET SINGLE PATIENT BY PATIENT ID -->  {[get_patient_by_patient_id]-[patientID]} --> returns: [{1,Patient1,patient.1@gmail.com,12345,42,New York,kalibre1,Sar??,Erkek,donor1,scale1}]
+5. GET PATIENT PHOTOS BY DOCTOR ID --> {[get_patient_photos_by_id]-[patientID]} --> returns: [{1,patient_1_photo_1} {2,patient_1_photo_2} {3,patient_1_photo_3}] / ""
+6. ADD NEW PATIENT --> {[add_new_patient_by_doctor_id]-[name,email,tel,age,address,hair_caliber,hair_colour,gender,donor,norwood_scale,doctor_id]} --> returns : true/false
+7. UPDATE PATIENT --> {[update_patient_by_patient_id]-[id,name,email,tel,age,address,hair_caliber,hair_colour,gender,donor,norwood_scale,doctor_id]} --> returns : true/false
+8. DELETE PATIENT --> {[delete_patient_by_patient_id]-[patientID]} --> returns : true/false
+9. ADD NEW PATIENT PHOTO BY PATIENT ID--> {[add_new_photo_by_patient_id]-[patientID, photoName]} --> returns : true/false
+10. DELETE PATIENT PHOTO BY PATIENT ID--> {[delete_photo_by_patient_id]-[patientID]} --> returns : true/false
